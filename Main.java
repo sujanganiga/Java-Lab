@@ -1,5 +1,5 @@
 import java.util.*;
-import java.util.Objects;
+//import java.util.Objects;
  class Book {
     private int id;
     private String name;
@@ -33,18 +33,18 @@ import java.util.Objects;
         this.quantity = quantity;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
-        return id == book.id;
-    }
+    // @Override
+    // public boolean equals(Object o) {
+    //     if (this == o) return true;
+    //     if (o == null || getClass() != o.getClass()) return false;
+    //     Book book = (Book) o;
+    //     return id == book.id;
+    // }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
+    // @Override
+    // public int hashCode() {
+    //     return Objects.hash(id);
+    // }
 
     @Override
     public String toString() {
@@ -68,7 +68,7 @@ import java.util.Objects;
         // Display all books
         System.out.println("Books in the set:");
         for (Book book : bookSet) {
-            System.out.println(book);
+            System.out.println(book);  
         }
 
         // Check if a book exists
@@ -87,15 +87,15 @@ import java.util.Objects;
         }
 
         // Update the quantity of a book
-        Book bookToUpdate = new Book(1, "Book One", "Author A", 10);
-        if (bookSet.contains(bookToUpdate)) {
-            for (Book book : bookSet) {
-                if (book.equals(bookToUpdate)) {
-                    book.setQuantity(20);
-                    break;
-                }
-            }
-        }
+        //Book bookToUpdate = new Book(1, "Book One", "Author A", 10);
+        // if (bookSet.contains(bookToUpdate)) {
+        //     for (Book book : bookSet) {
+        //         if (book.equals(bookToUpdate)) {
+        //             book.setQuantity(20);
+        //             break;
+        //         }
+        //     }
+        // }
 
         // Display all books after update
         System.out.println("\nBooks in the set after updating quantity:");
