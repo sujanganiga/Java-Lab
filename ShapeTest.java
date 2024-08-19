@@ -95,6 +95,7 @@ public class ShapeTest {
 
         ThreeDCircle threeDCircle = new ThreeDCircle();
         threeDCircle.setPoints(0);
+        
         threeDCircle.display();
         System.out.println("ThreeDCircle points: " + threeDCircle.getPoints());
     }

@@ -7,6 +7,7 @@ public class GrowAbleQueue <T>{
         queue=new ArrayList<>();
     }
     public void enqueue(T ele){
+        
         queue.add(ele);
     }
     public T dequeue(){

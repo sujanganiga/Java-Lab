@@ -6,6 +6,7 @@ class RangeException extends Exception{
     }
 }
 
+
 public class StudentMarksSheet {
     private String stdName;
     private int [] marks;

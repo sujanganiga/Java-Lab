@@ -45,6 +45,7 @@ public class RetailItem {
         Scanner sc=new Scanner(System.in);
         String t=sc.next();
         sc.close();
+        
         item1.setDescription(t);
         System.out.println(item1.getDescription());
     }

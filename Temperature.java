@@ -34,6 +34,8 @@ public class Temperature {
     }
 
     public static void main(String[] args) {
+
+        
         try {
             // Test with a non-zero temperature
             Temperature temp1 = new Temperature(25.5);

@@ -1,4 +1,3 @@
-
 class Bus{
     boolean[] seat;
     public Bus(int seatnumber){
